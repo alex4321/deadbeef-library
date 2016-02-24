@@ -126,7 +126,10 @@ bool Library::IsMusicFile(const string& path)
     }
     vector<string> whitelist
     {
-        "mp3"
+        ".3gp", ".aa", ".aac", ".aax", ".act", ".aiff", ".amr", ".ape", ".au", 
+        ".awb", ".dct", ".dss", ".dvf", ".flac", ".gsm", ".iklax", ".ivs", 
+        ".m4a", ".m4b", ".m4p", ".mmf", ".mp3", ".ogg", ".oga", ".opus", ".ra", 
+        ".rm", ".raw", ".tta", ".vox", ".wav", ".wma", ".wv", ".webm"
     };
     string path_lowercase = strToLower(path);
     string extension = path_lowercase.substr(path_lowercase.find_last_of(".") + 1);
